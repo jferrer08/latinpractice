@@ -13,7 +13,7 @@ El proyecto consiste en el diseño de un circuito Front end o interfaz para conv
 
 En la figura 1 se muestra el diagrama a bloques del que se compone la aplicación, como se observa se compone de un bloque llamado **contadorTDC** el cual se encarga de realizar el conteo una vez que se recibe un pulso de entrada o señal de algun sensor, el dato generado se registra o almacena para posteriormente mediante el bloque **RS232_TX** enviarlo hacia la computadora.
 
-cuando se active el stop pasa a un estado que hace que se almacene el valor actual del contador, luego pasa a otro donde envia dicho dato al transmisor, luego pasa a otro que activa al transmisor para enviar el dato y luego a otro donde espera a que termine la transmisión y cuando ya termina la transmisión se regresa al estado inicial
+Para que la aplicación funcione se crea una maquina de estados, la cual fungira como etapa de control teniendo el siguiente principio de funcionamiento cuando se active el la señal o pulso se pasa a un estado que hace que se almacene el valor actual del contador, luego pasa a otro estado donde envia dicho dato al transmisor, luego pasa a otro estado que activa al transmisor para enviar el dato y luego a otro estado donde espera a que termine la transmisión y cuando ya termina la transmisión se regresa al estado inicial.
 
 ![](topTDC.png)
 **Figura 1.** Diagrama a bloques del TDC.
