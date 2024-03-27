@@ -18,19 +18,17 @@ Para que la aplicación funcione se crea una maquina de estados, la cual fungira
 ![](topTDC.png)
 **Figura 1.** Diagrama a bloques del TDC.
 
-Pines propuestos (3 entradas, 2 salidas):
+Pines propuestos (3 entradas, 2 salidas) con breve descripción:
 
-Pulso/señal -> input
+**Pulso/señal -> input**.- En este pin se conecta la señal que genera el pulso con el cual inicia el conteo del tiempo que tarda el dicho pulso para generar un dato digital que se tranmitirá mediante RS232.
 
-reset ->input
+**reset ->input**.- Elemento asíncrono que genera un reseto de la aplicación.
 
-clk ->input
+**clk ->input**.- Este elemento contiene la señal de reloj, la cual será de 50MHz.
 
-tx -> output
+**tx -> output**.- Pin por el cual se envía el dato digital convertido. 
 
-eot ->output
-
-
+**eot ->output**.- Pin por el cual se muestra un indicar de fin de transmisión.
 
 
 <!---
