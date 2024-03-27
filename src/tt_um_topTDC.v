@@ -22,7 +22,7 @@ module tt_um_topTDC (
   //assign uio_oe  = 0;
 
     topTDC U1 (.clk(clk), .stop(ui_in[7]), .reset(ui_in[6]), .tx(uo_out[1]), .eot(uo_out[0]));
-    assign uio_eo = 8'b00000000;
+    //assign uio_eo = 8'b00000000;
     assign uio_out[7:0] = 8'b00000000;
     assign uo_out[7:2] = 6'b000000;
 
