@@ -18,6 +18,16 @@ Para que la aplicación funcione se crea una maquina de estados, la cual fungira
 ![](topTDC.png)
 **Figura 1.** Diagrama a bloques del TDC.
 
+Pines propuestos (3 entradas, 2 salidas):
+
+Pulso/señal -> input
+reset ->input
+clk ->input
+tx -> output
+eot ->output
+
+
+<!---
 ## How to test
 
 TDC
@@ -25,3 +35,4 @@ TDC
 ## External hardware
 
 TDC
+-->
