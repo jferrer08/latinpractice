@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module top_statateMachine(clk, stop, reset, dato, tx, eot);
+module topTDC(clk, stop, reset, dato, tx, eot);
 
 input clk;
 input stop;
