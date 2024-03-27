@@ -21,10 +21,16 @@ Para que la aplicación funcione se crea una maquina de estados, la cual fungira
 Pines propuestos (3 entradas, 2 salidas):
 
 Pulso/señal -> input
+
 reset ->input
+
 clk ->input
+
 tx -> output
+
 eot ->output
+
+
 
 
 <!---
