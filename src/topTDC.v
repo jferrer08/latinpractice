@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 
-module topTDC(clk, stop, reset, dato, tx, eot);
+module topTDC(clk, stop, reset, tx, eot);
 
 input clk;
 input stop;
 input reset;
 
-output [7:0] dato;
+//output [7:0] dato;
 output tx,eot;
 
 //estados
@@ -124,6 +124,6 @@ begin
 		temp <= temp;
 end
 
-assign dato = temp;
+//assign dato = temp;
 
 endmodule
