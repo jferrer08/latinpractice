@@ -10,7 +10,10 @@ You can also include images in this folder and reference them in the markdown. E
 ## How it works
 
 El proyecto consiste en el diseño de un circuito Front end o interfaz para convertir a digital la señal proveniente de un sensor con salida en tiempo. La industria nos proporciona un sinfín de sensores para medir o monitorear diferentes variables físicas, dichos sensores pueden proporcionar su señal en diferentes formas, voltaje corriente, frecuencia, tiempo (ancho de pulso), entre otras. El bloque que se propone se enfoca en la conversión de tiempo (definido entre el pulso de start y stop) a un formato digital, también conocidos como circuitos TDC (Time to Digital Converter), para posteriormente enviarlo vía RS232 para que pueda ser monitoreado en una PC o dispositivo compatible con el protocolo RS232. 
+
 En la figura 1 se muestra el diagrama a bloques del que se compone la aplicación, como se observa se compone de un bloque llamado **contadorTDC** el cual se encarga de realizar el conteo una vez que se recibe un pulso de entrada o señal de algun sensor, el dato generado se registra o almacena para posteriormente mediante el bloque **RS232_TX** enviarlo hacia la computadora.
+
+cuando se active el stop pasa a un estado que hace que se almacene el valor actual del contador, luego pasa a otro donde envia dicho dato al transmisor, luego pasa a otro que activa al transmisor para enviar el dato y luego a otro donde espera a que termine la transmisión y cuando ya termina la transmisión se regresa al estado inicial
 
 ![](topTDC.png)
 **Figura 1.** Diagrama a bloques del TDC.
