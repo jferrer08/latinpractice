@@ -31,11 +31,15 @@ Pines propuestos (3 entradas, 2 salidas) con breve descripción:
 **eot ->output**.- Pin por el cual se muestra un indicar de fin de transmisión.
 
 
-<!---
+
 ## How to test
 
-TDC
+Las pruebas se realizaron en Modelsim en su versión gratuita, para ello se hizo una adecuación generando un pequeño modulo PWM dentro de la aplicación para simular lo que sería la señal de un sensor, para este caso se opto por generar cuatro valores de PWM los cuales generan cuatro valores distintos que se transmiten por RS232, en la figura 2 se muestra la primer combinación de PWM que corresponde a una combinación 00 y que genera un valor binario 00010011.
 
+![](00.png)
+**Figura 2.** Combinación 00 que genera un valor binario 00010011.
+
+<!---
 ## External hardware
 
 TDC
