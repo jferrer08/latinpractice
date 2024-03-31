@@ -48,6 +48,11 @@ A continuación el siguiente valor de prueba fue la combinación 10 la cual gene
 ![](10.png)
 **Figura 4.** Combinación 10 que genera un valor binario 00111011. Figura de elaboración propia.
 
+Para finalizar la última combinación 11 genero un valor binario 01001111 y dicha simulación se puede observar en la figura 5, en dicha figura se puede observar al igual que las anteriores como cambia el ancho de pulso que hace que se genere dicho valor binario.
+
+![](11.png)
+**Figura 5.** Combinación 11 que genera un valor binario 01001111. Figura de elaboración propia.
+
 <!---
 ## External hardware
 
