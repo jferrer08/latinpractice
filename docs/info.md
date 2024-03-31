@@ -31,7 +31,6 @@ Pines propuestos (3 entradas, 2 salidas) con breve descripción:
 **eot ->output**.- Pin por el cual se muestra un indicar de fin de transmisión.
 
 
-
 ## How to test
 
 Las pruebas se realizaron en Modelsim en su versión gratuita, para ello se hizo una adecuación generando un pequeño modulo PWM dentro de la aplicación para simular lo que sería la señal de un sensor, para este caso se opto por generar cuatro valores de PWM los cuales generan cuatro valores distintos que se transmiten por RS232, en la figura 2 se muestra la primer combinación de PWM que corresponde a una combinación 00 y que genera un valor binario 00010011.
@@ -42,7 +41,12 @@ Las pruebas se realizaron en Modelsim en su versión gratuita, para ello se hizo
 El siguiente valor de prueba fue la combinación 01 la cual genero un valor binario 00100111 y dicha simulación se puede observar en la figura 3, en dicha figura se puede observar como cambia el ancho de pulso que hace que se genere dicho valor binario.
 
 ![](01.png)
-**Figura 3.** Combinación 00 que genera un valor binario 00100111. Figura de elaboración propia.
+**Figura 3.** Combinación 01 que genera un valor binario 00100111. Figura de elaboración propia.
+
+A continuación el siguiente valor de prueba fue la combinación 10 la cual genero un valor binario 00111011 y dicha simulación se puede observar en la figura 4, en dicha figura se puede observar como cambia el ancho de pulso que hace que se genere dicho valor binario.
+
+![](10.png)
+**Figura 4.** Combinación 10 que genera un valor binario 00111011. Figura de elaboración propia.
 
 <!---
 ## External hardware
