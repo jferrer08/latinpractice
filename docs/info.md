@@ -16,7 +16,7 @@ En la figura 1 se muestra el diagrama a bloques del que se compone la aplicació
 Para que la aplicación funcione se crea una maquina de estados, la cual fungira como etapa de control teniendo el siguiente principio de funcionamiento cuando se active la señal o pulso se pasa a un estado que hace que se almacene el valor actual del contador, luego pasa a otro estado donde envia dicho dato al transmisor, luego pasa a otro estado que activa al transmisor para enviar el dato y luego a otro estado donde espera a que termine la transmisión y cuando ya termina la transmisión se regresa al estado inicial.
 
 ![](topTDC.png)
-**Figura 1.** Diagrama a bloques del TDC.
+**Figura 1.** Diagrama a bloques del TDC. Figura de elaboración propia.
 
 Pines propuestos (3 entradas, 2 salidas) con breve descripción:
 
@@ -37,7 +37,12 @@ Pines propuestos (3 entradas, 2 salidas) con breve descripción:
 Las pruebas se realizaron en Modelsim en su versión gratuita, para ello se hizo una adecuación generando un pequeño modulo PWM dentro de la aplicación para simular lo que sería la señal de un sensor, para este caso se opto por generar cuatro valores de PWM los cuales generan cuatro valores distintos que se transmiten por RS232, en la figura 2 se muestra la primer combinación de PWM que corresponde a una combinación 00 y que genera un valor binario 00010011.
 
 ![](00.png)
-**Figura 2.** Combinación 00 que genera un valor binario 00010011.
+**Figura 2.** Combinación 00 que genera un valor binario 00010011. Figura de elaboración propia.
+
+El siguiente valor de prueba fue la combinación 01 la cual genero un valor binario 00100111 y dicha simulación se puede observar en la figura 3, en dicha figura se puede observar como cambia el ancho de pulso que hace que se genere dicho valor binario.
+
+![](01.png)
+**Figura 3.** Combinación 00 que genera un valor binario 00100111. Figura de elaboración propia.
 
 <!---
 ## External hardware
