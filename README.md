@@ -50,7 +50,7 @@ En la figura 1 se muestra el diagrama a bloques del que se compone la aplicació
 
 Para que la aplicación funcione se crea una maquina de estados, la cual fungira como etapa de control teniendo el siguiente principio de funcionamiento cuando se active la señal o pulso se pasa a un estado que hace que se almacene el valor actual del contador, luego pasa a otro estado donde envia dicho dato al transmisor, luego pasa a otro estado que activa al transmisor para enviar el dato y luego a otro estado donde espera a que termine la transmisión y cuando ya termina la transmisión se regresa al estado inicial.
 
-![](../../docs/topTDC.png)
+![](docs/topTDC.png)
 **Figura 1.** Diagrama a bloques del TDC. Figura de elaboración propia.
 
 Pines propuestos (3 entradas, 2 salidas) con breve descripción:
