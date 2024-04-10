@@ -56,19 +56,19 @@ _**Figura 1.** Diagrama a bloques del TDC. Figura de elaboración propia._
 >[!NOTE] 
 >Pines propuestos (3 entradas, 2 salidas) con breve descripción:
 >
-> - **Pulso/señal -> input**.- En este elemento se conecta una señal que genera un ancho de pulso que oscila entre 40ns a 5.1us y con el cual inicia el conteo del tiempo que tarda dicho pulso para posteriormente generar un dato digital que se tranmitirá mediante RS232, esta señal será conectada en el pin **_in_out[7]_**.
+> - **Pulso/señal -> input**.- En este elemento se conecta una señal en el pin **_in_out[7]_** que genera un ancho de pulso que oscila entre 40ns a 5.1us y con el cual inicia el conteo del tiempo que tarda dicho pulso, para posteriormente generar un dato digital que se tranmitirá mediante RS232 usando la salida _tx_.
 >
-> - **reset ->input**.- Elemento asíncrono que genera un reseto de la aplicación el cual se conectará en el pin **_in_out[6]_**.
+> - **reset ->input**.- Elemento asíncrono que genera un reseto de la aplicación el cual se conectará en el pin **_in_out[6]_**, dicho elemento puede ser un _push button_ o un _dipswitch_ y en cualquier caso deberán estar conectados o configurados en pull down.
 >
 > - **clk ->input**.- Este elemento contiene la señal de reloj, la cual será de 50MHz y que esta incluida dentro del diseño.
 >
 > - **tx -> output**.- Pin por el cual se envía el dato digital convertido, para ello se deberá conectar en el pin **_in_out[1]_** el RX de un modulo RS232 o computadora que recibirá el dato el cual deberá tener la siguiente configuración para el correcto funcionamiento:
 >
->    - Baud: 9600
->    - Data size: 8 bits
->    - Paridad: impar
+>    - Baud rate: 9600
+>    - Data bits: 8 bits
+>    - Paridad: impar (odd)
 >
-> - **eot ->output**.- Pin por el cual se muestra un indicador de fin de transmisión el cual se conectará en el pin **_in_out[0]_**.
+> - **eot ->output**.- Pin por el cual se muestra un indicador de fin de transmisión el cual se conectará en el pin **_in_out[0]_**, dicho indicador puede ser un _led_.
 >
 
 ---
