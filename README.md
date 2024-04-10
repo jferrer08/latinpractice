@@ -70,25 +70,25 @@ Pines propuestos (3 entradas, 2 salidas) con breve descripción:
 
 Las pruebas se realizaron en Modelsim en su versión gratuita, para ello se hizo una adecuación generando un pequeño modulo PWM dentro de la aplicación para simular lo que sería la señal de un sensor, para este caso se opto por generar cuatro valores de PWM los cuales generan cuatro valores distintos que se transmiten por RS232, en la figura 2 se muestra la primer combinación de PWM que corresponde a una combinación 00 y que genera un valor binario 00010011.
 
-![](00.png)
+![](docs/00.png)
 **Figura 2.** Combinación 00 que genera un valor binario 00010011. Figura de elaboración propia.
 
 El siguiente valor de prueba fue la combinación 01 la cual genero un valor binario 00100111 y dicha simulación se puede observar en la figura 3, en dicha figura se puede observar como cambia el ancho de pulso que hace que se genere dicho valor binario.
 
-![](01.png)
+![](docs/01.png)
 **Figura 3.** Combinación 01 que genera un valor binario 00100111. Figura de elaboración propia.
 
 A continuación el siguiente valor de prueba fue la combinación 10 la cual genero un valor binario 00111011 y dicha simulación se puede observar en la figura 4, en dicha figura se puede observar como cambia el ancho de pulso que hace que se genere dicho valor binario.
 
-![](10.png)
+![](docs/10.png)
 **Figura 4.** Combinación 10 que genera un valor binario 00111011. Figura de elaboración propia.
 
 Para finalizar la última combinación 11 genero un valor binario 01001111 y dicha simulación se puede observar en la figura 5, en dicha figura se puede observar al igual que las anteriores como cambia el ancho de pulso que hace que se genere dicho valor binario.
 
-![](11.png)
+![](docs/11.png)
 **Figura 5.** Combinación 11 que genera un valor binario 01001111. Figura de elaboración propia.
 
 Para finalizar la etapa de pruebas se opto por realizar una prueba en una tarjeta de desarrollo AMIBA 2, la cual cuenta con un FPGA Spartan 6 XC6SLX9, 216/576 Kb de Block RAM, un oscilador de 50 MHz, convertidor USB/RS232 (FTDI FT2232HL), leds de propósito general, switch de dos posiciones de propósito general, etc. En el siguiente [enlace](https://youtu.be/AC0O6wIpQp8) se podrá observar un video en el cual se muestran las distintas combinaciones simuladas anteriormente y además se puede ver el valor enviado por el puerto serial, el cual es monitoreado mediante la aplicación Serial Debug Assistant, como recurso extra se hizo uso de los leds de propósito general como apoyo para poder visualizar el valor generado y a su vez poder ver este valor en el monitor serial, que en nuestro caso se muestra en hexadecimal corroborando lo generado con lo enviado.
 
-![](design.fw.png)
+![](docs/design.fw.png)
 **Figura 6.** Diagrama a bloques del TDC. Figura de elaboración propia.
