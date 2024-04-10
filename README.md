@@ -57,7 +57,7 @@ Pines propuestos (3 entradas, 2 salidas) con breve descripción:
 
 **Pulso/señal -> input**.- En este pin se conecta la señal que genera el pulso con el cual inicia el conteo del tiempo que tarda el dicho pulso para generar un dato digital que se tranmitirá mediante RS232.
 
-**reset ->input**.- Elemento asíncrono que genera un reseto de la aplicación.
+**reset ->input**.- Elemento asíncrono que genera un reseto de la aplicación el cual se conectará en el pin in_out[7].
 
 **clk ->input**.- Este elemento contiene la señal de reloj, la cual será de 50MHz.
 
