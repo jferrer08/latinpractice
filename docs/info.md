@@ -15,7 +15,7 @@ En la figura 1 se muestra el diagrama a bloques del que se compone la aplicació
 
 Para que la aplicación funcione se crea una maquina de estados, la cual fungira como etapa de control teniendo el siguiente principio de funcionamiento cuando se active la señal o pulso se pasa a un estado que hace que se almacene el valor actual del contador, luego pasa a otro estado donde envia dicho dato al transmisor, luego pasa a otro estado que activa al transmisor para enviar el dato y luego a otro estado donde espera a que termine la transmisión y cuando ya termina la transmisión se regresa al estado inicial.
 
-![](docs/topTDC.png)
+![](topTDC.png)
 _**Figura 1.** Diagrama a bloques del TDC. Figura de elaboración propia._
 
 >[!NOTE] 
@@ -39,29 +39,29 @@ _**Figura 1.** Diagrama a bloques del TDC. Figura de elaboración propia._
 ---
 Lo descrito anteriormente se representa en la figura 2 en la cual se observan los pines propuestos dentro del área de diseño.
 
-![](docs/design.fw.png)
+![](design.fw.png)
 _**Figura 2.** Diagrama a bloques del TDC dentro del área definda. Figura de elaboración propia._
 
 # How to test
 
 Las pruebas se realizaron en Modelsim en su versión gratuita, para ello se hizo una adecuación generando un pequeño modulo PWM dentro de la aplicación para simular lo que sería la señal de un sensor, para este caso se opto por generar cuatro valores de PWM los cuales generan cuatro valores distintos que se transmiten por RS232, en la figura 3 se muestra la primer combinación de PWM que corresponde a una combinación 00 y que genera un valor binario 00010011.
 
-![](docs/00.png)
+![](00.png)
 _**Figura 3.** Combinación 00 que genera un valor binario 00010011. Figura de elaboración propia._
 
 El siguiente valor de prueba fue la combinación 01 la cual genero un valor binario 00100111 y dicha simulación se puede observar en la figura 4, en dicha figura se puede observar como cambia el ancho de pulso que hace que se genere dicho valor binario.
 
-![](docs/01.png)
+![](01.png)
 _**Figura 4.** Combinación 01 que genera un valor binario 00100111. Figura de elaboración propia._
 
 A continuación el siguiente valor de prueba fue la combinación 10 la cual genero un valor binario 00111011 y dicha simulación se puede observar en la figura 5, en dicha figura se puede observar como cambia el ancho de pulso que hace que se genere dicho valor binario.
 
-![](docs/10.png)
+![](10.png)
 _**Figura 5.** Combinación 10 que genera un valor binario 00111011. Figura de elaboración propia._
 
 Para finalizar la última combinación 11 genero un valor binario 01001111 y dicha simulación se puede observar en la figura 6, en dicha figura se puede observar al igual que las anteriores como cambia el ancho de pulso que hace que se genere dicho valor binario.
 
-![](docs/11.png)
+![](11.png)
 _**Figura 6.** Combinación 11 que genera un valor binario 01001111. Figura de elaboración propia._
 
 Para finalizar la etapa de pruebas se opto por realizar una prueba en una tarjeta de desarrollo AMIBA 2, la cual cuenta con un FPGA Spartan 6 XC6SLX9, 216/576 Kb de Block RAM, un oscilador de 50 MHz, convertidor USB/RS232 (FTDI FT2232HL), leds de propósito general, switch de dos posiciones de propósito general, etc. En el siguiente [enlace](https://youtu.be/AC0O6wIpQp8) se podrá observar un video en el cual se muestran las distintas combinaciones simuladas anteriormente y además se puede ver el valor enviado por el puerto serial, el cual es monitoreado mediante la aplicación Serial Debug Assistant, como recurso extra se hizo uso de los leds de propósito general como apoyo para poder visualizar el valor generado y a su vez poder ver este valor en el monitor serial, que en nuestro caso se muestra en hexadecimal corroborando lo generado con lo enviado.
